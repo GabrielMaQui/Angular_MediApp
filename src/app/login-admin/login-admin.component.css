@@ -1,0 +1,110 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    background: linear-gradient(180deg, #fff, #00d9d9 86%);
+}
+
+.login-admin {
+    width: 100%;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 17px;
+    color: #8b8888;
+    font-family: Inter;
+}
+
+.img-logo-icon {
+    position: absolute;
+    top: 111px;
+    left: 514px;
+    width: 251px;
+    height: 251px;
+    object-fit: cover;
+}
+
+.input, .input1 {
+    position: absolute;
+    width: 345px;
+    height: 51px;
+}
+
+.input-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+    width: 345px;
+    height: 51px;
+}
+
+.input {
+    top: 390px;
+    left: 467px;
+}
+
+.input1 {
+    top: 491px;
+    left: 467px;
+}
+
+.correo-electronico-input, .contrasena-input {
+    position: absolute;
+    top: calc(50% - 13.64px);
+    left: 16.07px;
+    width: calc(100% - 32.14px);
+    height: 29.7px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #8b8888;
+}
+
+.btniniciar {
+    position: absolute;
+    top: 635px;
+    left: 512px;
+    width: 255px;
+    height: 46px;
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btniniciar-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 40px;
+    background-color: #34d461;
+    width: 255px;
+    height: 46px;
+}
+
+.iniciar-sesion-btn {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.iniciar-sesion-btn:hover {
+    color: #fff;
+}

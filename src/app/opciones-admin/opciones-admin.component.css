@@ -1,0 +1,109 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #fff, #00d9d9 86%);
+}
+
+.option-admin {
+    width: 100%;
+    position: relative;
+    height: 832px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+    font-family: Inter;
+}
+
+.opciones-de-administrador {
+    position: absolute;
+    top: 100px;
+    left: 54px;
+    font-size: 25px;
+    color: #025061;
+    text-align: center;
+}
+
+.btnagregar, .btneliminar, .btncerrar, .btnpedidoreceta, .btnsinreceta, .btnbloquearuser {
+    position: absolute;
+    width: 291px;
+    height: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btnagregar-child, .btneliminar-child, .btncerrar-child, .btnpedidoreceta-child, .btnsinreceta-child, .btnbloquearuser-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #d6d6d6, #904ea0);
+    width: 100%;
+    height: 100%;
+}
+
+.agregar-producto, .eliminar-producto, .cerrar-sesin, .realizar-pedido-con, .bloquear-usuario {
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    display: inline-block;
+    width: 241px;
+}
+
+.cerrar-sesin {
+    width: auto;
+}
+
+.div, .div2 {
+    position: absolute;
+    top: 2px;
+    left: 259.17px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    width: 19px;
+    height: 39px;
+}
+
+.btnagregar {
+    top: 231px;
+    left: 193px;
+}
+
+.btneliminar {
+    top: 345px;
+    left: 193px;
+}
+
+.btncerrar {
+    top: 625px;
+    left: 494px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btnpedidoreceta {
+    top: 231px;
+    left: 809px;
+    font-size: 16px;
+}
+
+.btnsinreceta {
+    top: 345px;
+    left: 809px;
+    font-size: 16px;
+}
+
+.btnbloquearuser {
+    top: 459px;
+    left: 193px;
+    text-align: center;
+}

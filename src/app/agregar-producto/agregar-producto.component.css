@@ -1,0 +1,202 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(180deg, #fff, #00d9d9 86%);
+}
+
+.agregar-producto {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #fff, #00d9d9 86%);
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    color: #868686;
+    font-family: Inter;
+}
+
+.agregar-producto1 {
+    position: absolute;
+    top: 137px;
+    left: 101px;
+    font-size: 25px;
+    color: #025061;
+}
+
+.regresar1 {
+    font-weight: 600;
+}
+
+.regresar {
+    position: absolute;
+    top: 72px;
+    left: 57px;
+    font-size: 30px;
+    color: #025061;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btnguardar-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: #a67ed9;
+    width: 192px;
+    height: 45px;
+}
+
+.guardar {
+    position: absolute;
+    top: 6.62px;
+    left: 47.68px;
+    display: inline-block;
+    width: 103.1px;
+    height: 31.8px;
+}
+
+.btnguardar {
+    position: absolute;
+    top: 688px;
+    left: 545px;
+    width: 192px;
+    height: 45px;
+    font-size: 25px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.inputimage-icon {
+    position: absolute;
+    top: 482px;
+    left: 558px;
+    width: 163px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.input-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #d9d9d9;
+    width: 268px;
+    height: 49px;
+}
+
+.nombre, .marca, .descripcin, .categora {
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    font-weight: 500;
+}
+
+.input-item {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #d9d9d9;
+    border: none;
+    width: 247px;
+    height: 25px;
+    font-size: 16px;
+    padding-left: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-item:focus {
+    outline: none;
+}
+
+.input, .input1, .input2, .input3, .cbocategorias, .input4 {
+    position: absolute;
+    width: 268px;
+    height: 49px;
+}
+
+.input {
+    top: 234px;
+    left: 302px;
+}
+
+.input1 {
+    top: 234px;
+    left: 709px;
+}
+
+.input2 {
+    top: 310px;
+    left: 302px;
+}
+
+.input3 {
+    top: 310px;
+    left: 709px;
+}
+
+.rectangle-div {
+    width: 100%;
+    position: relative;
+    top: 482px;
+    left: 558px;
+    width: 163px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: rgba(217, 217, 217, 0);
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.div {
+    width: 87.5px;
+    position: relative;
+    font-size: 90px;
+    font-family: 'Font Awesome 6 Free';
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    height: 86px;
+}
+
+.cbocategorias {
+    top: 405px;
+    left: 302px;
+    display: flex;
+    align-items: center;
+}
+
+.cbocategorias select {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: #d9d9d9;
+    border: none;
+    width: 247px;
+    height: 25px;
+    font-size: 16px;
+    padding-left: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cbocategorias select:focus {
+    outline: none;
+}
+
+.input4 {
+    top: 405px;
+    left: 709px;
+    width: 268px;
+    height: 49px;
+}
