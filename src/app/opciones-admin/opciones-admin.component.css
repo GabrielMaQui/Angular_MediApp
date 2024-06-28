@@ -5,14 +5,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(180deg, #fff, #00d9d9 86%);
 }
 
 .option-admin {
     width: 100%;
     position: relative;
-    height: 832px;
+    height: 700px;
     overflow: hidden;
     text-align: left;
     font-size: 18px;
