@@ -10,36 +10,28 @@
 <body>
     
     <div class="option-admin">
-        <button class="btnagregar">
+        <button class="btnagregar" (click)="navigateToListarProductos()" >
             <div class="btnagregar-child"></div>
-            <div class="agregar-producto">Agregar Producto</div>
+            <div class="agregar-producto">Listar Productos</div>
             <div class="div">&gt;</div>
         </button>
-        <button class="btneliminar">
+        <button class="btneliminar" (click)="navigateToListarUsuarios()">
             <div class="btnagregar-child"></div>
-            <div class="eliminar-producto">Eliminar Producto</div>
+            <div class="eliminar-producto">Bloquear Usuario</div>
             <div class="div">&gt;</div>
         </button>
-        <button class="btncerrar">
+       
+        <button class="btnpedidoreceta" (click)="navigateToListarPedidos()">
             <div class="btnagregar-child"></div>
-            <div class="cerrar-sesin">Cerrar Sesión</div>
-            <div class="div2">&gt;</div>
-        </button>
-        <button class="btnpedidoreceta">
-            <div class="btnagregar-child"></div>
-            <div class="realizar-pedido-con">Realizar Pedido (con receta)</div>
+            <div class="realizar-pedido-con">Lista de Pedidos</div>
             <div class="div">&gt;</div>
         </button>
         <button class="btnsinreceta">
-            <div class="btnagregar-child"></div>
-            <div class="realizar-pedido-con">Realizar Pedido (sin receta)</div>
+            <div class="btnagregar-child"></div>    
+            <div class="realizar-pedido-con">Cerrar</div>
             <div class="div">&gt;</div>
         </button>
-        <button class="btnbloquearuser">
-            <div class="btnagregar-child"></div>
-            <div class="bloquear-usuario">Bloquear Usuario</div>
-            <div class="div2">&gt;</div>
-        </button>
+       
         <b class="opciones-de-administrador">Opciones de administrador</b>
     </div>
     

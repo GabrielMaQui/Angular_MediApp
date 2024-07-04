@@ -1,0 +1,35 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #495057;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    font-size: 1.1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  

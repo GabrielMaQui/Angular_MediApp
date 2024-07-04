@@ -1,0 +1,62 @@
+
+<div class="pedido-list">
+    <h2>Lista de Pedidos</h2>
+    <button class="btn-menu" (click)="navigateToMenu()">Menú de Opciones</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Usuario</th>
+          <th>Fecha</th>
+          <th>Precio Total</th>
+          <th>Con Receta</th>
+          <th>Foto Receta</th>
+          <th>Dirección Entrega</th>
+          <th>Referencia</th>
+          <th>Estado</th>
+          <th>Detalles</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (pedido of pedidos; track $index) {
+            <tr>
+            <td>{{ pedido.codPedCab }}</td>
+            <td>{{ pedido.usuario.nombreUsuario }}</td>
+            <td>{{ pedido.fecha }}</td>
+            <td>{{ pedido.precioTotal }}</td>
+            <td><input type="checkbox" [checked]="pedido.esConReceta" disabled></td>
+            <td><img [src]="pedido.fotoReceta" alt="Foto Receta" width="50"></td>
+            <td>{{ pedido.direccionEntrega }}</td>
+            <td>{{ pedido.direccionReferencia }}</td>
+            <td>{{ pedido.estadoEntrega.nombreEstado }}</td>
+            <td>
+                @if (pedido.detalles.length > 0) {
+                    <ul>
+                        @for(detalle of pedido.detalles; track $index){
+                            <li >
+                                {{ detalle.producto.nombreProducto }} - Cantidad: {{ detalle.cantidad }} - Subtotal: {{ detalle.subtotal }}
+                              </li>
+                        }
+                    </ul>
+                }
+
+                @else{
+                    <ng-template #noDetalles>No hay detalles</ng-template>
+                }
+            </td>
+            <td>
+                <select (change)="seleccionarEstado(pedido.codPedCab, $event)">
+                    @for(estado of estadosEntrega; track $index){
+                        <option   [value]="estado.codEstEnt" [selected]="estado.codEstEnt === pedido.estadoEntrega.codEstEnt">
+                            {{ estado.nombreEstado }}
+                        </option>
+                    } 
+                  </select>
+                  <button (click)="cambiarEstadoPedido(pedido)">Cambiar Estado</button>
+            </td>
+            </tr>
+        }
+</tbody>
+</table>
+</div>
